@@ -76,7 +76,6 @@ window.onload = function() {
       antialias: true
     });
 
-
     var scene    = new THREE.Scene(),
         camera   = new THREE.PerspectiveCamera(400, window.innerWidth/window.innerHeight, 100, 3000);
 
