@@ -3,6 +3,7 @@
 Another three.js and web audio API experiment.
 Check out the demo at [dancing-cube](http://dancing-cube.neribarnini.me/)!
 
+With mp3 file upload: http://ilbonte.github.io/dancing-cube/
 ### Examples
 
 ![preview 1](http://i.imgur.com/MIDvTSO.png)
