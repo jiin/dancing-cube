@@ -1,0 +1,25 @@
+{
+  "name": "dancing-cube",
+  "version": "0.0.1",
+  "authors": [
+    "Neri Barnini <neri.barnini@gmail.com>"
+  ],
+  "description": "let's rock!",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "threejs",
+    "audio",
+    "api"
+  ],
+  "dependencies": {
+    "three.js": "~0.71.0",
+    "threex.keyboardstate": "*"
+  }
+}
