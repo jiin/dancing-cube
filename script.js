@@ -72,9 +72,13 @@ window.onload = function() {
     source.connect(analyser);
     analyser.connect(context.destination);
 
-    var renderer = new THREE.WebGLRenderer(),
-        scene    = new THREE.Scene(),
-        camera   = new THREE.PerspectiveCamera(400, window.innerWidth/window.innerHeight, 1, 5000);
+    var renderer = new THREE.WebGLRenderer({
+      antialias: true
+    });
+
+
+    var scene    = new THREE.Scene(),
+        camera   = new THREE.PerspectiveCamera(400, window.innerWidth/window.innerHeight, 100, 3000);
 
     var keyboard = new THREEx.KeyboardState();
 
