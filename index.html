@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Dancing Cube - Another three.js and Web Audio API experiment</title>
     <meta charset="utf-8">
     <style>
-      body { 
-        margin: 0; }
-
-      canvas { 
-        width: 100%; 
-        height: 100% }
-
-      div#player {
-        display: none; }
-
-      div#footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 18px;
-        width: 100%;
-        padding: 5px 0;
-        background-color: #ecf0f1;
-        font-family: monospace;
-        text-align: center; }
-
-      div#footer span {
-        font-size: 12px;
-        text-decoration: underline; }
+        body {
+            margin: 0;
+        }
+        
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+        
+        div#player {
+            display: none;
+        }
+        
+        div#footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 18px;
+            width: 100%;
+            padding: 5px 0;
+            background-color: #ecf0f1;
+            font-family: monospace;
+            text-align: center;
+        }
+        
+        div#footer span {
+            font-size: 12px;
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="player"></div>
     <div id="footer">
-      <span>SPACE</span> for start/pause music | 
-      <span>DRAG</span> to rotate the cube
+        <span>SPACE</span> for start/pause music |
+        <span>DRAG</span> to rotate the cube
+        <input id="file" type="file" />
+        <button onClick="dance()">DANCE!</button>
     </div>
 
     <script src="bower_components/three.js/three.min.js"></script>
     <script src="bower_components/threex.keyboardstate/threex.keyboardstate.js"></script>
+    <script>
+        var objectUrl;
+        (function () {
+            function onChange(event) {
+                var file = event.currentTarget.files[0];
+                objectUrl = URL.createObjectURL(file);
+            }
+            document.getElementById('file').addEventListener('change', onChange);
+        }());
+    </script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
