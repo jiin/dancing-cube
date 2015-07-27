@@ -8,6 +8,10 @@ Check out the demo at [dancing-cube](http://dancing-cube.neribarnini.me/)!
 ![preview 1](http://i.imgur.com/MIDvTSO.png)
 ![preview 2](http://i.imgur.com/RmLKDC3.png)
 
+### Credits
+
+For the test I used the song "Strip Grind" by [HIFANA](http://www.hifana.com/).
+
 ### License
 
 ```
