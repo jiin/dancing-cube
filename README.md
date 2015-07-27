@@ -11,7 +11,7 @@ Check out the demo at [dancing-cube](http://dancing-cube.neribarnini.me/)!
 ### License
 
 ```
-Copyright (C) 2013  <jiin@insicuri.net>
+Copyright (C) 2015  <neri.barnini@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
