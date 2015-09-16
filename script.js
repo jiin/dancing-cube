@@ -143,12 +143,12 @@ window.onload = function() {
      *
      */
     
-    var HORIZONTAL_HIGH =  1,
-        HORIZONTAL_LOW  = -1,
-        VERTICAL_HIGH   =  2,
-        VERTICAL_LOW    = -2,
-        PROFONDITY_HIGH =  3,
-        PROFONDITY_LOW  = -3;
+    var HORIZONTAL_TOP     =  1,
+        HORIZONTAL_BOTTOM  = -1,
+        VERTICAL_TOP       =  2,
+        VERTICAL_BOTTOM    = -2,
+        PROFONDITY_TOP     =  3,
+        PROFONDITY_BOTTOM  = -3;
 
     /*
      *
@@ -232,7 +232,7 @@ window.onload = function() {
           color = colors[Math.floor(Math.random() * colors.length)];
 
           cubes[i][j][t] = new THREE.Mesh( 
-            new THREE.BoxGeometry(35, 35, 35), 
+            new THREE.BoxGeometry(35 + Math.random(), 35 + Math.random(), 35 + Math.random()), 
             new THREE.MeshLambertMaterial({ 
               color: color
             })
@@ -292,22 +292,22 @@ window.onload = function() {
 
             var current = cubeValues.shift();
 
-            if (animation == HORIZONTAL_HIGH)
+            if (animation == HORIZONTAL_TOP)
               cube.position.x = current + original[i][j][t].x;
 
-            if (animation == VERTICAL_HIGH)
+            if (animation == VERTICAL_TOP)
               cube.position.y = current + original[i][j][t].y;
 
-            if (animation == PROFONDITY_HIGH)
+            if (animation == PROFONDITY_TOP)
               cube.position.z = current + original[i][j][t].z;
 
-            if (animation == HORIZONTAL_LOW)
+            if (animation == HORIZONTAL_BOTTOM)
               cube.position.x = -current + original[i][j][t].x;
 
-            if (animation == VERTICAL_LOW)
+            if (animation == VERTICAL_BOTTOM)
               cube.position.y = -current + original[i][j][t].y;
 
-            if (animation == PROFONDITY_LOW)
+            if (animation == PROFONDITY_BOTTOM)
               cube.position.z = -current + original[i][j][t].z;
           }
         }
