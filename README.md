@@ -8,10 +8,14 @@ Check out the demo at [dancing-cube](http://dancing-cube.neribarnini.me/)!
 ![preview 1](http://i.imgur.com/MIDvTSO.png)
 ![preview 2](http://i.imgur.com/RmLKDC3.png)
 
+### Credits
+
+For the test I used the song "Strip Grind" by [HIFANA](http://www.hifana.com/).
+
 ### License
 
 ```
-Copyright (C) 2013  <jiin@insicuri.net>
+Copyright (C) 2015  <neri.barnini@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
